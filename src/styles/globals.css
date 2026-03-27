@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-slate-300 hover:bg-slate-400;
+}
+
+/* Smooth Transitions */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Focus Styles */
+button,
+a {
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+}
+
+/* Dark Mode Support (optional) */
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-slate-950 text-slate-100;
+  }
+}
