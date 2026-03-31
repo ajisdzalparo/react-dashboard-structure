@@ -1,3 +1,5 @@
+"use client"
+
 import React, { createContext, useCallback, useState } from 'react'
 
 interface SidebarContextType {
